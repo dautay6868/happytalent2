@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { GalleryItem as GalleryItemType } from "@shared/schema";
 
 interface GalleryItemProps {
@@ -7,8 +5,6 @@ interface GalleryItemProps {
 }
 
 const GalleryItem = ({ item }: GalleryItemProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   // Determine color class based on program id
   let colorClass = "primary";
   if (item.programId) {
@@ -18,36 +14,18 @@ const GalleryItem = ({ item }: GalleryItemProps) => {
   }
 
   return (
-    <>
-      <div 
-        className="group relative overflow-hidden rounded-lg shadow-md cursor-pointer" 
-        onClick={() => setIsOpen(true)}
-      >
+    <div className="group relative overflow-hidden rounded-lg shadow-md">
+      <div className="flex flex-col">
         <img 
           src={item.imagePath} 
           alt={item.title} 
-          className="w-full h-48 md:h-56 object-cover transform transition-transform duration-300 group-hover:scale-110" 
+          className="w-full h-60 md:h-64 object-cover transform transition-transform duration-300 group-hover:scale-105" 
         />
-        <div className={`absolute inset-0 bg-${colorClass} bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300`}>
-          <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="font-bold">{item.title}</span>
-          </div>
+        <div className={`p-3 bg-white border-t border-gray-100`}>
+          <h3 className={`text-base font-semibold text-${colorClass}`}>{item.title}</h3>
         </div>
       </div>
-
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-3xl">
-          <div className="p-1">
-            <img 
-              src={item.imagePath} 
-              alt={item.title} 
-              className="w-full rounded-lg object-contain max-h-[80vh]" 
-            />
-            <h3 className="text-xl font-bold mt-4 text-center">{item.title}</h3>
-          </div>
-        </DialogContent>
-      </Dialog>
-    </>
+    </div>
   );
 };
 
