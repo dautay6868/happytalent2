@@ -64,10 +64,19 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 text-white">
               {program.slug === "dien-vien-nhi" ? 
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">{program.name}</span> : 
+                program.slug === "piano" ? 
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-emerald-400">{program.name}</span> :
+                program.slug === "dance" ? 
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-300 to-indigo-400">{program.name}</span> :
                 program.name
               }
             </h1>
-            <div className={`text-lg md:text-xl max-w-3xl mx-auto font-semibold whitespace-pre-line bg-black bg-opacity-40 p-4 rounded-lg ${program.slug === "dien-vien-nhi" ? "text-orange-100" : "text-yellow-100"} shadow-lg`}>
+            <div className={`text-lg md:text-xl max-w-3xl mx-auto font-semibold whitespace-pre-line bg-black bg-opacity-40 p-4 rounded-lg 
+              ${program.slug === "dien-vien-nhi" ? "text-orange-100" : 
+                program.slug === "piano" ? "text-teal-100" : 
+                program.slug === "dance" ? "text-purple-100" :
+                "text-yellow-100"} 
+              shadow-lg`}>
               {program.description}
             </div>
           </div>
@@ -90,6 +99,10 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
               <div className={`text-lg mb-6 font-medium whitespace-pre-line p-3 rounded-lg shadow-md
                 ${program.slug === "dien-vien-nhi" 
                   ? "bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 text-red-900" 
+                  : program.slug === "piano"
+                  ? "bg-gradient-to-r from-teal-50 to-emerald-50 border-l-4 border-teal-500 text-teal-900"
+                  : program.slug === "dance"
+                  ? "bg-gradient-to-r from-purple-50 to-indigo-50 border-l-4 border-purple-500 text-purple-900"
                   : "bg-yellow-50 border-l-4 border-yellow-500 text-yellow-900"}`}>
                 {program.description}
               </div>
@@ -180,20 +193,20 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                   )}
                   {program.slug === "dance" && (
                     <>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Các động tác nhảy cơ bản</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Phát triển khả năng theo nhịp</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Học các phong cách nhảy đa dạng</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Nâng cao sự dẻo dai và phối hợp cơ thể</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Biểu diễn nhóm và solo</li>
+                      <li className="flex items-center font-medium text-purple-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Các động tác nhảy cơ bản</li>
+                      <li className="flex items-center font-medium text-purple-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Phát triển khả năng theo nhịp</li>
+                      <li className="flex items-center font-medium text-purple-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Học các phong cách nhảy đa dạng</li>
+                      <li className="flex items-center font-medium text-purple-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Nâng cao sự dẻo dai và phối hợp cơ thể</li>
+                      <li className="flex items-center font-medium text-purple-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Biểu diễn nhóm và solo</li>
                     </>
                   )}
                   {program.slug === "piano" && (
                     <>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Nắm vững kỹ thuật đánh đàn cơ bản</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Đọc và hiểu ký hiệu âm nhạc</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Nâng cao khả năng thẩm âm</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Phát triển kỹ năng biểu diễn solo</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Học lý thuyết âm nhạc cơ bản</li>
+                      <li className="flex items-center font-medium text-teal-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Nắm vững kỹ thuật đánh đàn cơ bản</li>
+                      <li className="flex items-center font-medium text-teal-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Đọc và hiểu ký hiệu âm nhạc</li>
+                      <li className="flex items-center font-medium text-teal-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Nâng cao khả năng thẩm âm</li>
+                      <li className="flex items-center font-medium text-teal-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Phát triển kỹ năng biểu diễn solo</li>
+                      <li className="flex items-center font-medium text-teal-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Học lý thuyết âm nhạc cơ bản</li>
                     </>
                   )}
                 </ul>
