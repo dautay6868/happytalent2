@@ -32,7 +32,7 @@ const ContactSection = () => {
                   <i className="fas fa-phone-alt text-secondary text-xl"></i>
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-1">Điện Thoại</h4>
+                  <h4 className="font-bold text-lg mb-1">Hotline</h4>
                   <p className="text-gray-600">0967.478.123</p>
                 </div>
               </div>
