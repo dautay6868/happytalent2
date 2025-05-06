@@ -4,6 +4,7 @@ import { db } from "@db";
 import { programs, inquiries, contactFormSchema, inquirySchema } from "@shared/schema";
 import { eq } from "drizzle-orm";
 import { ZodError } from "zod";
+import path from "path";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API prefix
@@ -140,6 +141,37 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
       console.error("Error submitting contact form:", error);
       res.status(500).json({ message: "Đã xảy ra lỗi, vui lòng thử lại sau." });
+    }
+  });
+
+  // Update a program image
+  app.patch(`${apiPrefix}/programs/:slug/image`, async (req, res) => {
+    try {
+      const { slug } = req.params;
+      const { imagePath } = req.body;
+      
+      if (!imagePath) {
+        return res.status(400).json({ message: "Image path is required" });
+      }
+      
+      const program = await db.query.programs.findFirst({
+        where: eq(programs.slug, slug),
+      });
+      
+      if (!program) {
+        return res.status(404).json({ message: "Program not found" });
+      }
+      
+      const [updatedProgram] = await db
+        .update(programs)
+        .set({ imagePath })
+        .where(eq(programs.id, program.id))
+        .returning();
+      
+      res.json({ message: "Program image updated successfully", program: updatedProgram });
+    } catch (error) {
+      console.error(`Error updating program image for ${req.params.slug}:`, error);
+      res.status(500).json({ message: "Internal server error" });
     }
   });
 
