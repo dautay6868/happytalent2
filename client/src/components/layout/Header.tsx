@@ -25,13 +25,13 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md fixed w-full z-50">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center max-w-screen-xl">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img 
             src="/images/logo.jpg" 
             alt="Happy Talent Logo" 
-            className="h-16 w-auto mr-2"
+            className="h-14 w-auto mr-2"
           />
           <div>
             <h1 className="text-xs font-medium text-gray-500">Trung Tâm Nghệ Thuật</h1>
@@ -40,12 +40,12 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="font-medium text-dark hover:text-primary transition-colors">
+        <nav className="hidden md:flex items-center space-x-4">
+          <Link href="/" className="font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
             Trang Chủ
           </Link>
           <div className="relative group">
-            <button className="flex items-center font-medium text-dark hover:text-primary transition-colors">
+            <button className="flex items-center font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
               Đào Tạo <i className="fas fa-chevron-down text-xs ml-1"></i>
             </button>
             <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -68,16 +68,16 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <a href="/#teachers" className="font-medium text-dark hover:text-primary transition-colors">
+          <a href="/#teachers" className="font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
             Giáo Viên
           </a>
-          <a href="/#gallery" className="font-medium text-dark hover:text-primary transition-colors">
+          <a href="/#gallery" className="font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
             Thư Viện
           </a>
-          <a href="/#schedule" className="font-medium text-dark hover:text-primary transition-colors">
+          <a href="/#schedule" className="font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
             Lịch Học
           </a>
-          <a href="/#contact" className="font-medium text-dark hover:text-primary transition-colors">
+          <a href="/#contact" className="font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
             Liên Hệ
           </a>
         </nav>
@@ -85,7 +85,7 @@ const Header = () => {
         {/* Register Button */}
         <a 
           href="/#register" 
-          className="hidden md:block bg-primary hover:bg-opacity-90 text-white font-bold py-2 px-6 rounded-full transition duration-300"
+          className="hidden md:block bg-primary hover:bg-opacity-90 text-white font-medium py-1.5 px-4 rounded-full transition duration-300 text-sm whitespace-nowrap"
         >
           Đăng Ký Ngay
         </a>
