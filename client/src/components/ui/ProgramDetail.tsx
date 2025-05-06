@@ -61,8 +61,13 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
         </div>
         <div className="container mx-auto px-4">
           <div className="text-center relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 text-white">{program.name}</h1>
-            <div className="text-lg md:text-xl max-w-3xl mx-auto font-semibold whitespace-pre-line bg-black bg-opacity-40 p-4 rounded-lg text-yellow-100 shadow-lg">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 text-white">
+              {program.slug === "dien-vien-nhi" ? 
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">{program.name}</span> : 
+                program.name
+              }
+            </h1>
+            <div className={`text-lg md:text-xl max-w-3xl mx-auto font-semibold whitespace-pre-line bg-black bg-opacity-40 p-4 rounded-lg ${program.slug === "dien-vien-nhi" ? "text-orange-100" : "text-yellow-100"} shadow-lg`}>
               {program.description}
             </div>
           </div>
@@ -82,7 +87,10 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
             </div>
             <div>
               <h2 className="text-3xl font-bold font-heading mb-6">Về khóa học {program.name}</h2>
-              <div className="text-lg mb-6 font-medium whitespace-pre-line p-3 rounded-lg bg-yellow-50 border-l-4 border-yellow-500 text-yellow-900 shadow-md">
+              <div className={`text-lg mb-6 font-medium whitespace-pre-line p-3 rounded-lg shadow-md
+                ${program.slug === "dien-vien-nhi" 
+                  ? "bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 text-red-900" 
+                  : "bg-yellow-50 border-l-4 border-yellow-500 text-yellow-900"}`}>
                 {program.description}
               </div>
               <div className="space-y-4">
@@ -163,11 +171,11 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                   )}
                   {program.slug === "dien-vien-nhi" && (
                     <>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Kỹ thuật diễn xuất cơ bản</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Khả năng thể hiện cảm xúc đa dạng</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Kỹ năng biểu diễn trước máy quay</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Phương pháp phân tích kịch bản đơn giản</li>
-                      <li className="flex items-center"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Rèn luyện khả năng tập trung và phản xạ</li>
+                      <li className="flex items-center font-medium text-red-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Kỹ thuật diễn xuất cơ bản</li>
+                      <li className="flex items-center font-medium text-red-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Khả năng thể hiện cảm xúc đa dạng</li>
+                      <li className="flex items-center font-medium text-red-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Kỹ năng biểu diễn trước máy quay</li>
+                      <li className="flex items-center font-medium text-red-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Phương pháp phân tích kịch bản đơn giản</li>
+                      <li className="flex items-center font-medium text-red-900"><i className={`fas fa-check text-${colorClass} mr-2`}></i> Rèn luyện khả năng tập trung và phản xạ</li>
                     </>
                   )}
                   {program.slug === "dance" && (
@@ -212,7 +220,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                   </div>
                 )}
                 {program.slug === "dien-vien-nhi" && (
-                  <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-4 rounded-lg shadow-sm border border-amber-100 text-gray-800">
+                  <div className="bg-gradient-to-br from-orange-50 to-red-50 p-4 rounded-lg shadow-sm border border-orange-200 text-gray-800">
                     Chương trình Diễn Viên Nhí giúp trẻ phát triển khả năng diễn xuất, thể hiện cảm xúc và xây dựng nhân vật. 
                     Các bé sẽ được học các kỹ thuật diễn xuất cơ bản, cách phân tích kịch bản đơn giản và phương pháp thể hiện nhân vật.
                     Khóa học còn tập trung vào việc rèn luyện khả năng tập trung, phản xạ nhanh và làm việc nhóm. 
