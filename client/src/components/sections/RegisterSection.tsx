@@ -40,7 +40,7 @@ const RegisterSection = () => {
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-phone-alt text-primary mr-2"></i>
-                  <span className="text-lg font-bold">Hotline: 0123.456.789</span>
+                  <span className="text-lg font-bold">Hotline: 0967.478.123</span>
                 </div>
               </div>
             </div>
