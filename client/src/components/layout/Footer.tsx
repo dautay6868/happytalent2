@@ -27,7 +27,7 @@ const Footer = () => {
               <a href="#" className="text-gray-700 hover:text-primary transition-colors">
                 <i className="fab fa-youtube"></i>
               </a>
-              <a href="#" className="text-gray-700 hover:text-primary transition-colors">
+              <a href="https://www.tiktok.com/@happy.talent4?_r=1&_d=secCgYIASAHKAESPgo8Rchsc7E1dX6HQCqC7sl4VoLwGBtijJr1MZEsQBMdow%2FEswlkoz1%2Bhm2m32sAwd0Me7dJhCFyGsYagtVcGgA%3D&_svg=1&checksum=33400eb772f786789bcdc1291fa27391b09eb67e6a7e386c3234b2b1fd0aaa9e&sec_uid=MS4wLjABAAAAW99K1cwd9eZtnKXpILk3HGmmE1WiD3BVNTmFxqe8rVvSF4cbDzxQCuviQfJbKd6c&sec_user_id=MS4wLjABAAAAcEwLjNTW8csgp3SefrV3VQcIScIP7yH-ofGH7MS1Bn4TgXRgZtMvmOMGAFsQEZmY&share_app_id=1180&share_author_id=7492638163065488391&share_link_id=A0AC1CDD-E7B8-424C-9C39-D03D87D4B149&sharer_language=vi&social_share_type=5&source=h5_t&timestamp=1746514868&tt_from=copy&u_code=eh7lfjfkebd5i3&ug_btm=b9081%2Cb5836&user_id=7436625866820862992&utm_campaign=client_share&utm_medium=ios&utm_source=copy" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition-colors">
                 <i className="fab fa-tiktok"></i>
               </a>
             </div>
