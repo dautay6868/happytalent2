@@ -68,9 +68,9 @@ const Footer = () => {
             <h4 className="text-lg font-bold font-heading mb-4">Liên Kết</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-700 hover:text-primary transition-colors">
+                <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }} className="text-gray-700 hover:text-primary transition-colors">
                   Trang Chủ
-                </Link>
+                </a>
               </li>
               <li>
                 <a href="/#about" className="text-gray-700 hover:text-primary transition-colors">
