@@ -54,15 +54,15 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
   return (
     <div className="bg-neutral min-h-screen">
       {/* Hero Section */}
-      <section className={`relative bg-gradient-to-r from-${colorClass} to-primary py-16 md:py-24`}>
+      <section className={`relative bg-gradient-to-r from-${colorClass} to-black py-16 md:py-24`}>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full -ml-20 -mt-20"></div>
           <div className="absolute bottom-0 right-0 w-64 h-64 bg-accent rounded-full -mr-32 -mb-32"></div>
         </div>
         <div className="container mx-auto px-4">
-          <div className="text-center text-white relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">{program.name}</h1>
-            <div className="text-lg md:text-xl max-w-3xl mx-auto font-medium whitespace-pre-line">
+          <div className="text-center relative z-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 text-white">{program.name}</h1>
+            <div className="text-lg md:text-xl max-w-3xl mx-auto font-semibold whitespace-pre-line bg-black bg-opacity-40 p-4 rounded-lg text-yellow-100 shadow-lg">
               {program.description}
             </div>
           </div>
@@ -82,7 +82,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
             </div>
             <div>
               <h2 className="text-3xl font-bold font-heading mb-6">Về khóa học {program.name}</h2>
-              <div className="text-lg text-gray-700 mb-6 font-medium whitespace-pre-line">
+              <div className="text-lg mb-6 font-medium whitespace-pre-line p-3 rounded-lg bg-yellow-50 border-l-4 border-yellow-500 text-yellow-900 shadow-md">
                 {program.description}
               </div>
               <div className="space-y-4">
@@ -196,44 +196,44 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                   Mô tả chương trình
                 </h3>
                 {program.slug === "mau-nhi" && (
-                  <p className="text-gray-600">
+                  <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-4 rounded-lg shadow-sm border border-pink-100 text-gray-800">
                     Khóa học Mẫu Nhí được thiết kế đặc biệt cho các bé yêu thích thời trang và muốn trở thành người mẫu nhí. 
                     Chương trình cung cấp kiến thức và kỹ năng từ cơ bản đến nâng cao về kỹ thuật catwalk, tạo dáng và biểu diễn.
                     Học viên sẽ được đào tạo bởi những giảng viên giàu kinh nghiệm và có cơ hội tham gia các sự kiện thời trang thực tế. 
                     Qua đó, các bé không chỉ phát triển kỹ năng mà còn nâng cao sự tự tin và phong thái trên sân khấu.
-                  </p>
+                  </div>
                 )}
                 {program.slug === "mc-nhi" && (
-                  <p className="text-gray-600">
+                  <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-4 rounded-lg shadow-sm border border-blue-100 text-gray-800">
                     Khóa học MC Nhí giúp các bé phát triển kỹ năng giao tiếp, phát âm chuẩn và khả năng dẫn chương trình. 
                     Các bé sẽ được hướng dẫn cách sử dụng giọng nói hiệu quả, kỹ thuật nói trước đám đông và cách ứng biến trong các tình huống.
                     Chương trình còn trang bị cho các bé kỹ năng phỏng vấn, dẫn dắt và tương tác với khán giả. 
                     Sau khóa học, các bé sẽ có cơ hội thực hành tại các sự kiện thực tế của trung tâm.
-                  </p>
+                  </div>
                 )}
                 {program.slug === "dien-vien-nhi" && (
-                  <p className="text-gray-600">
+                  <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-4 rounded-lg shadow-sm border border-amber-100 text-gray-800">
                     Chương trình Diễn Viên Nhí giúp trẻ phát triển khả năng diễn xuất, thể hiện cảm xúc và xây dựng nhân vật. 
                     Các bé sẽ được học các kỹ thuật diễn xuất cơ bản, cách phân tích kịch bản đơn giản và phương pháp thể hiện nhân vật.
                     Khóa học còn tập trung vào việc rèn luyện khả năng tập trung, phản xạ nhanh và làm việc nhóm. 
                     Qua các bài tập thực hành, các bé sẽ dần hoàn thiện kỹ năng diễn xuất và có cơ hội tham gia các vở kịch, phim ngắn.
-                  </p>
+                  </div>
                 )}
                 {program.slug === "dance" && (
-                  <p className="text-gray-600">
+                  <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-4 rounded-lg shadow-sm border border-purple-100 text-gray-800">
                     Khóa học Dance mang đến cho các bé cơ hội khám phá thế giới nhảy múa với nhiều phong cách khác nhau như Hip-hop, Contemporary và K-pop. 
                     Các bé sẽ được học kỹ thuật vũ đạo cơ bản, cách di chuyển theo nhịp và phối hợp các động tác.
                     Chương trình không chỉ giúp phát triển kỹ năng nhảy mà còn tăng cường sức khỏe, sự dẻo dai và khả năng phối hợp cơ thể. 
                     Các bé sẽ được tham gia biểu diễn nhóm và có cơ hội thể hiện tài năng tại các sự kiện.
-                  </p>
+                  </div>
                 )}
                 {program.slug === "piano" && (
-                  <p className="text-gray-600">
+                  <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-4 rounded-lg shadow-sm border border-emerald-100 text-gray-800">
                     Khóa học Piano giúp các bé làm quen và phát triển kỹ năng chơi đàn từ cơ bản đến nâng cao. 
                     Các bé sẽ được học cách đọc nốt nhạc, kỹ thuật đánh đàn và lý thuyết âm nhạc căn bản.
                     Chương trình được thiết kế phù hợp với từng độ tuổi và trình độ, giúp các bé tiến bộ một cách tự nhiên và hiệu quả. 
                     Ngoài kỹ năng chơi đàn, các bé còn phát triển khả năng tập trung, sự kiên nhẫn và tình yêu âm nhạc.
-                  </p>
+                  </div>
                 )}
               </div>
             </div>
@@ -357,7 +357,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                   </div>
                   <div className="flex items-center">
                     <i className="fas fa-phone-alt text-primary mr-2"></i>
-                    <span className="text-lg font-bold">Hotline: 0123.456.789</span>
+                    <span className="text-lg font-bold">Hotline: 0967.478.123</span>
                   </div>
                 </div>
               </div>
