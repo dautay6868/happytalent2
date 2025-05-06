@@ -8,9 +8,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="https://images.unsplash.com/photo-1606076869941-fb2e39d75977?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDIxfHxjaGlsZCUyMHRhbGVudHxlbnwwfHx8fDE2Mjk4MzM5NTl8MA&ixlib=rb-4.0.3&q=80&w=50" 
+                src="/images/logo.jpg" 
                 alt="Happy Talent Logo" 
-                className="h-10 w-10 rounded-full mr-2" 
+                className="h-14 w-auto mr-2" 
               />
               <h3 className="text-xl font-bold font-heading">Happy Talent</h3>
             </div>

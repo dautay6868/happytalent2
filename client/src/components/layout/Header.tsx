@@ -29,9 +29,9 @@ const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img 
-            src="https://images.unsplash.com/photo-1606076869941-fb2e39d75977?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDIxfHxjaGlsZCUyMHRhbGVudHxlbnwwfHx8fDE2Mjk4MzM5NTl8MA&ixlib=rb-4.0.3&q=80&w=60" 
+            src="/images/logo.jpg" 
             alt="Happy Talent Logo" 
-            className="h-12 w-12 rounded-full mr-2"
+            className="h-16 w-auto mr-2"
           />
           <div>
             <h1 className="text-lg md:text-xl font-bold font-heading text-primary">Happy Talent</h1>
