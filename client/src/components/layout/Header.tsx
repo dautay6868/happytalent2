@@ -27,7 +27,7 @@ const Header = () => {
     <header className="bg-white shadow-md fixed w-full z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center max-w-screen-xl">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }} className="flex items-center">
           <img 
             src="/images/logo.jpg" 
             alt="Happy Talent Logo" 
@@ -37,13 +37,13 @@ const Header = () => {
             <h1 className="text-xs font-medium text-gray-500">Trung Tâm Nghệ Thuật</h1>
             <p className="text-lg md:text-xl font-bold font-heading text-primary">Happy Talent</p>
           </div>
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-4">
-          <Link href="/" className="font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
+          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }} className="font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
             Trang Chủ
-          </Link>
+          </a>
           <div className="relative group">
             <button className="flex items-center font-medium text-dark hover:text-primary transition-colors text-sm whitespace-nowrap">
               Đào Tạo <i className="fas fa-chevron-down text-xs ml-1"></i>
@@ -101,9 +101,9 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div className={`md:hidden bg-white shadow-md ${mobileMenuOpen ? 'block' : 'hidden'}`}>
-        <Link href="/" className="block px-4 py-2 text-dark hover:bg-primary hover:text-white">
+        <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); setMobileMenuOpen(false); }} className="block px-4 py-2 text-dark hover:bg-primary hover:text-white">
           Trang Chủ
-        </Link>
+        </a>
         <div className="px-4 py-2 text-dark">
           <div className="font-medium mb-1">Đào Tạo</div>
           <Link href="/mau-nhi" className="block pl-4 py-1 text-sm text-gray-700 hover:text-primary">
