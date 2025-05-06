@@ -46,7 +46,7 @@ const Header = () => {
           </Link>
           <div className="relative group">
             <button className="flex items-center font-medium text-dark hover:text-primary transition-colors">
-              Chương Trình <i className="fas fa-chevron-down text-xs ml-1"></i>
+              Đào Tạo <i className="fas fa-chevron-down text-xs ml-1"></i>
             </button>
             <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <div className="py-1" role="menu" aria-orientation="vertical">
@@ -105,7 +105,7 @@ const Header = () => {
           Trang Chủ
         </Link>
         <div className="px-4 py-2 text-dark">
-          <div className="font-medium mb-1">Chương Trình</div>
+          <div className="font-medium mb-1">Đào Tạo</div>
           <Link href="/mau-nhi" className="block pl-4 py-1 text-sm text-gray-700 hover:text-primary">
             Mẫu Nhí
           </Link>

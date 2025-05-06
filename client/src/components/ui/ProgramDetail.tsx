@@ -214,7 +214,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
               <div>
                 <h3 className="text-xl font-bold font-heading mb-4 flex items-center">
                   <i className={`fas fa-book text-${colorClass} mr-2`}></i>
-                  Mô tả chương trình
+                  Mô tả khóa học
                 </h3>
                 {program.slug === "mau-nhi" && (
                   <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-4 rounded-lg shadow-sm border border-pink-100 text-gray-800">
@@ -275,7 +275,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
               <table className="min-w-full">
                 <thead>
                   <tr className={`bg-${colorClass} text-white`}>
-                    <th className="py-4 px-6 text-left font-heading">Chương Trình</th>
+                    <th className="py-4 px-6 text-left font-heading">Đào Tạo</th>
                     <th className="py-4 px-6 text-left font-heading">Thứ 2-4-6</th>
                     <th className="py-4 px-6 text-left font-heading">Thứ 3-5-7</th>
                     <th className="py-4 px-6 text-left font-heading">Cuối Tuần</th>

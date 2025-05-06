@@ -11,10 +11,10 @@ const ProgramsSection = () => {
     <section id="programs" className="py-20 bg-neutral">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-4">Các Chương Trình Đào Tạo</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-4">Các Khóa Đào Tạo</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Các chương trình đào tạo của chúng tôi được thiết kế đặc biệt để phát triển toàn diện kỹ năng nghệ thuật, 
+            Các khóa đào tạo của chúng tôi được thiết kế đặc biệt để phát triển toàn diện kỹ năng nghệ thuật, 
             sự tự tin và khả năng biểu diễn của trẻ.
           </p>
         </div>
