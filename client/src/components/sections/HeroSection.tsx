@@ -24,7 +24,7 @@ const HeroSection = () => {
         </div>
         <div className="md:w-1/2 flex justify-center z-10">
           <img 
-            src="https://images.unsplash.com/photo-1615287646032-82698f51ee21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDR8fGNoaWxkJTIwZGFuY2V8ZW58MHx8fHwxNjI5ODMzOTU5fDA&ixlib=rb-4.0.3&q=80&w=500" 
+            src="/images/hero-children.png" 
             alt="Trẻ em đang biểu diễn nghệ thuật" 
             className="rounded-lg shadow-2xl hero-animation max-w-full h-auto" 
           />
