@@ -33,8 +33,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">Điện Thoại</h4>
-                  <p className="text-gray-600">0123.456.789</p>
-                  <p className="text-gray-600">0987.654.321</p>
+                  <p className="text-gray-600">0967.478.123</p>
                 </div>
               </div>
 
@@ -44,8 +43,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">Email</h4>
-                  <p className="text-gray-600">info@happytalent.vn</p>
-                  <p className="text-gray-600">contact@happytalent.vn</p>
+                  <p className="text-gray-600">bebinami.kute9x@gmail.com</p>
                 </div>
               </div>
 
@@ -55,8 +53,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">Giờ Làm Việc</h4>
-                  <p className="text-gray-600">Thứ Hai - Thứ Sáu: 9:00 - 19:00</p>
-                  <p className="text-gray-600">Thứ Bảy - Chủ Nhật: 9:00 - 17:00</p>
+                  <p className="text-gray-600">Thứ Hai - Thứ Sáu: 9:00 - 22:00</p>
+                  <p className="text-gray-600">Thứ Bảy - Chủ Nhật: 8:00 - 22:00</p>
                 </div>
               </div>
             </div>
