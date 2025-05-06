@@ -18,7 +18,7 @@ const Footer = () => {
               Nuôi dưỡng tài năng nghệ thuật của trẻ từ sớm, tạo nền tảng vững chắc cho tương lai.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-700 hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61574697726665&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition-colors">
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a href="#" className="text-gray-700 hover:text-primary transition-colors">
