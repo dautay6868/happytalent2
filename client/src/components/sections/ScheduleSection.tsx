@@ -26,7 +26,7 @@ const ScheduleSection = () => {
           <table className="min-w-full">
             <thead>
               <tr className="bg-secondary text-white">
-                <th className="py-4 px-6 text-left font-heading">Chương Trình</th>
+                <th className="py-4 px-6 text-left font-heading">Đào Tạo</th>
                 <th className="py-4 px-6 text-left font-heading">Thứ 2-4-6</th>
                 <th className="py-4 px-6 text-left font-heading">Thứ 3-5-7</th>
                 <th className="py-4 px-6 text-left font-heading">Cuối Tuần</th>

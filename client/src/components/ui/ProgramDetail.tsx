@@ -219,7 +219,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                 {program.slug === "mau-nhi" && (
                   <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-4 rounded-lg shadow-sm border border-pink-100 text-gray-800">
                     Khóa học Mẫu Nhí được thiết kế đặc biệt cho các bé yêu thích thời trang và muốn trở thành người mẫu nhí. 
-                    Chương trình cung cấp kiến thức và kỹ năng từ cơ bản đến nâng cao về kỹ thuật catwalk, tạo dáng và biểu diễn.
+                    Khóa học cung cấp kiến thức và kỹ năng từ cơ bản đến nâng cao về kỹ thuật catwalk, tạo dáng và biểu diễn.
                     Học viên sẽ được đào tạo bởi những giảng viên giàu kinh nghiệm và có cơ hội tham gia các sự kiện thời trang thực tế. 
                     Qua đó, các bé không chỉ phát triển kỹ năng mà còn nâng cao sự tự tin và phong thái trên sân khấu.
                   </div>
@@ -228,13 +228,13 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                   <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-4 rounded-lg shadow-sm border border-blue-100 text-gray-800">
                     Khóa học MC Nhí giúp các bé phát triển kỹ năng giao tiếp, phát âm chuẩn và khả năng dẫn chương trình. 
                     Các bé sẽ được hướng dẫn cách sử dụng giọng nói hiệu quả, kỹ thuật nói trước đám đông và cách ứng biến trong các tình huống.
-                    Chương trình còn trang bị cho các bé kỹ năng phỏng vấn, dẫn dắt và tương tác với khán giả. 
+                    Khóa học còn trang bị cho các bé kỹ năng phỏng vấn, dẫn dắt và tương tác với khán giả. 
                     Sau khóa học, các bé sẽ có cơ hội thực hành tại các sự kiện thực tế của trung tâm.
                   </div>
                 )}
                 {program.slug === "dien-vien-nhi" && (
                   <div className="bg-gradient-to-br from-orange-50 to-red-50 p-4 rounded-lg shadow-sm border border-orange-200 text-gray-800">
-                    Chương trình Diễn Viên Nhí giúp trẻ phát triển khả năng diễn xuất, thể hiện cảm xúc và xây dựng nhân vật. 
+                    Khóa học Diễn Viên Nhí giúp trẻ phát triển khả năng diễn xuất, thể hiện cảm xúc và xây dựng nhân vật. 
                     Các bé sẽ được học các kỹ thuật diễn xuất cơ bản, cách phân tích kịch bản đơn giản và phương pháp thể hiện nhân vật.
                     Khóa học còn tập trung vào việc rèn luyện khả năng tập trung, phản xạ nhanh và làm việc nhóm. 
                     Qua các bài tập thực hành, các bé sẽ dần hoàn thiện kỹ năng diễn xuất và có cơ hội tham gia các vở kịch, phim ngắn.
@@ -244,7 +244,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                   <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-4 rounded-lg shadow-sm border border-purple-100 text-gray-800">
                     Khóa học Dance mang đến cho các bé cơ hội khám phá thế giới nhảy múa với nhiều phong cách khác nhau như Hip-hop, Contemporary và K-pop. 
                     Các bé sẽ được học kỹ thuật vũ đạo cơ bản, cách di chuyển theo nhịp và phối hợp các động tác.
-                    Chương trình không chỉ giúp phát triển kỹ năng nhảy mà còn tăng cường sức khỏe, sự dẻo dai và khả năng phối hợp cơ thể. 
+                    Khóa học không chỉ giúp phát triển kỹ năng nhảy mà còn tăng cường sức khỏe, sự dẻo dai và khả năng phối hợp cơ thể. 
                     Các bé sẽ được tham gia biểu diễn nhóm và có cơ hội thể hiện tài năng tại các sự kiện.
                   </div>
                 )}
@@ -252,7 +252,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
                   <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-4 rounded-lg shadow-sm border border-emerald-100 text-gray-800">
                     Khóa học Piano giúp các bé làm quen và phát triển kỹ năng chơi đàn từ cơ bản đến nâng cao. 
                     Các bé sẽ được học cách đọc nốt nhạc, kỹ thuật đánh đàn và lý thuyết âm nhạc căn bản.
-                    Chương trình được thiết kế phù hợp với từng độ tuổi và trình độ, giúp các bé tiến bộ một cách tự nhiên và hiệu quả. 
+                    Khóa học được thiết kế phù hợp với từng độ tuổi và trình độ, giúp các bé tiến bộ một cách tự nhiên và hiệu quả. 
                     Ngoài kỹ năng chơi đàn, các bé còn phát triển khả năng tập trung, sự kiên nhẫn và tình yêu âm nhạc.
                   </div>
                 )}
@@ -262,7 +262,7 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
         </div>
       </section>
 
-      {/* Program Schedule Section */}
+      {/* Course Schedule Section */}
       {program.schedules && program.schedules.length > 0 && (
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
