@@ -23,7 +23,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">Địa Chỉ</h4>
-                  <p className="text-gray-600">123 Đường Nguyễn Văn A, Quận 1, TP.HCM</p>
+                  <p className="text-gray-600">Tầng 7 - 177 Đường Quan Hoa, Cầu giấy, TP Hà Nội</p>
                 </div>
               </div>
 
@@ -91,7 +91,7 @@ const ContactSection = () => {
         <div className="mt-16 bg-neutral rounded-xl shadow-md overflow-hidden h-80">
           {/* Embedded Google Map */}
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5177580592424!2d106.69805857486936!3d10.77169105927937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc7%3A0x4db964d76bf6e18e!2zMTIzIMSQLiBOZ3V54buFbiBWxINuIEEsIFBoxrDhu51uZyAxLCBRdeG6rW4gMSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1684322123164!5m2!1svi!2s" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.926294064381!2d105.80055261541264!3d21.034974785994313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab1efbd06c8b%3A0xff4c53f78a8aa607!2zMTc3IMSQxrDhu51uZyBRdWFuIEhvYSwgUXVhbiBIb2EsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1684322123164!5m2!1svi!2s" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 

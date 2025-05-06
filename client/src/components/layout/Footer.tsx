@@ -105,7 +105,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
-                <span className="text-gray-400">123 Đường Nguyễn Văn A, Quận 1, TP.HCM</span>
+                <span className="text-gray-400">Tầng 7 - 177 Đường Quan Hoa, Cầu giấy, TP Hà Nội</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-phone-alt mt-1 mr-3 text-primary"></i>
