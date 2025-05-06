@@ -62,9 +62,9 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
         <div className="container mx-auto px-4">
           <div className="text-center text-white relative z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">{program.name}</h1>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto">
+            <div className="text-lg md:text-xl max-w-3xl mx-auto font-medium whitespace-pre-line">
               {program.description}
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -82,9 +82,9 @@ const ProgramDetail = ({ slug }: ProgramDetailProps) => {
             </div>
             <div>
               <h2 className="text-3xl font-bold font-heading mb-6">Về khóa học {program.name}</h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <div className="text-lg text-gray-700 mb-6 font-medium whitespace-pre-line">
                 {program.description}
-              </p>
+              </div>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className={`w-10 h-10 rounded-full bg-${colorClass} bg-opacity-10 flex items-center justify-center mr-4`}>
