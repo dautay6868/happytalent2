@@ -34,8 +34,8 @@ const Header = () => {
             className="h-16 w-auto mr-2"
           />
           <div>
-            <h1 className="text-lg md:text-xl font-bold font-heading text-primary">Happy Talent</h1>
-            <p className="text-xs text-gray-500">Trung Tâm Nghệ Thuật</p>
+            <h1 className="text-xs font-medium text-gray-500">Trung Tâm Nghệ Thuật</h1>
+            <p className="text-lg md:text-xl font-bold font-heading text-primary">Happy Talent</p>
           </div>
         </Link>
 
