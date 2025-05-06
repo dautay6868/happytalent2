@@ -60,7 +60,7 @@ const Header = () => {
                   Diễn Viên Nhí
                 </Link>
                 <Link href="/dance" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white" role="menuitem">
-                  Dance
+                  Dance Nhí
                 </Link>
                 <Link href="/piano" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white" role="menuitem">
                   Piano
@@ -116,7 +116,7 @@ const Header = () => {
             Diễn Viên Nhí
           </Link>
           <Link href="/dance" className="block pl-4 py-1 text-sm text-gray-700 hover:text-primary">
-            Dance
+            Dance Nhí
           </Link>
           <Link href="/piano" className="block pl-4 py-1 text-sm text-gray-700 hover:text-primary">
             Piano
