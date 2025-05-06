@@ -109,15 +109,15 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <i className="fas fa-phone-alt mt-1 mr-3 text-primary"></i>
-                <span className="text-gray-400">0123.456.789</span>
+                <span className="text-gray-400">0967.478.123</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-envelope mt-1 mr-3 text-primary"></i>
-                <span className="text-gray-400">info@happytalent.vn</span>
+                <span className="text-gray-400">bebinami.kute9x@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-clock mt-1 mr-3 text-primary"></i>
-                <span className="text-gray-400">Thứ Hai - Chủ Nhật: 9:00 - 19:00</span>
+                <span className="text-gray-400">Thứ Hai - Thứ Sáu: 9:00 - 22:00<br/>Thứ Bảy - Chủ Nhật: 8:00 - 22:00</span>
               </li>
             </ul>
           </div>
